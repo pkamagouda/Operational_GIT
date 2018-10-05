@@ -18,6 +18,13 @@
                                         <scope> system </scope>
 					<systemPath> ${env.JAVA_HOME}/lib/tools.jar </systemPath>
 			       	 </dependency>
+				 
+				 <dependency>
+    <groupId>com.jcraft</groupId>
+    <artifactId>jsch</artifactId>
+    <version>0.1.54</version>
+				 </dependency>
+</dependency>
 			</dependencies>
 		        <executions>
 		            <execution>
