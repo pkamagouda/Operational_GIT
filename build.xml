@@ -1,0 +1,13 @@
+<project name="testing" basedir="." default="zip_creation">
+
+        <target name="compile" depends="directory">
+		<javac srcdir = "/Devops/prapulita/OSB_Test/code/" destdir = "/Devops/prapulita/OSB_Test" />
+        </target>
+	
+	<target name="zip_creation" depends="compile" >
+		<mkdir dir="/Devops/prapulita/OSB_Test/zip_file"/>
+		<zip destfile="/Devops/prapulita/OSB_Test/zip_file/osb.zip" basedir="ManageOrder_Osb_2_0" />
+	</target>
+
+</project>
+
