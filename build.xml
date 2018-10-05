@@ -2,7 +2,7 @@
 	<property file="deploy_property" />
         
 	<path id="jsch.path">
-	            <pathelement location="${ANT_HOME}/lib/ant-jsch-1.8.1.jar" />
+	            <pathelement location="${ANT_HOME}/lib/ant-jsch.jar" />
 	            <pathelement location="${ANT_HOME}/lib/jsch-0.1.54.jar" />
 	        </path>
 
