@@ -1,6 +1,6 @@
 <project name="testing" basedir="." default="zip_creation">
 
-        <target name="compile" depends="directory">
+        <target name="compile">
 		<javac srcdir = "/Devops/prapulita/OSB_Test/code/" destdir = "/Devops/prapulita/OSB_Test" />
         </target>
 	
