@@ -12,7 +12,7 @@
 	<target name="copy" depends="zip_creation">
 		<scp file="/Devops/prapulita/OSB_Test/zip_file/osb.zip"
 		todir="${user_name}@{target_server}:/tmp/osb_release/ref/"
-		keyfile="${user.home}/.ssh/id_rsa"/>
+		keyfile="${user.home}/.ssh/jenkinsPub"/>
 	</target>
 
 </project>
