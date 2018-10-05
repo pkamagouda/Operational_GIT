@@ -1,5 +1,5 @@
-<project name="testing" basedir="." default="zip_creation">
-
+<project name="testing" basedir="." default="copy">
+	<property file="deploy_property" />
         <target name="compile">
 		<javac srcdir = "/Devops/prapulita/OSB_Test/code/" destdir = "/Devops/prapulita/OSB_Test" />
         </target>
@@ -7,6 +7,12 @@
 	<target name="zip_creation" depends="compile" >
 		<mkdir dir="/Devops/prapulita/OSB_Test/zip_file"/>
 		<zip destfile="/Devops/prapulita/OSB_Test/zip_file/osb.zip" basedir="ManageOrder_Osb_2_0" />
+	</target>
+
+	<target name="copy" depends="zip_creation">
+		<scp file="/Devops/prapulita/OSB_Test/zip_file/osb.zip"
+		todir="${user_name}@{target_server}:/tmp/osb_release/ref/"
+		keyfile="${user.home}/.ssh/id_rsa"/>
 	</target>
 
 </project>
