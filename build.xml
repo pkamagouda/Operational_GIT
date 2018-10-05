@@ -1,6 +1,9 @@
 <project name="testing" basedir="." default="copy">
 	<property file="deploy_property" />
         
+	<taskdef name="scp" classname="org.apache.tools.ant.taskdefs.optional.ssh.Scp" classpathref="jsch.path" />
+	 <taskdef name="sshexec" classname="org.apache.tools.ant.taskdefs.optional.ssh.SSHExec" classpathref="jsch.path" />
+	
 	<target name="zip_creation">
 		<mkdir dir="zip_file"/>
 		<zip destfile="zip_file/osb.zip" basedir="ManageOrder_Osb_2_0" />
