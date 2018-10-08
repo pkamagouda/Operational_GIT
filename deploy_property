@@ -1,2 +1,4 @@
 user_name=weblogic
 target_server=82.132.157.57
+port_number=7012
+password=webl0gic321
