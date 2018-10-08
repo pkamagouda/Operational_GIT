@@ -17,7 +17,10 @@
 	<target name="copy" depends="zip_creation">
 		<scp file="zip_file/osb.zip"
 		todir="${user_name}@{target_server}:/tmp/osb_release/ref/"
-		keyfile="${user.home}/.ssh/jenkinsPub"/>
+		trust="true"
+		port="${port_numer}"
+		password="${password}"
+		keyfile="${user.home}/.ssh/id_rsa"/>
 	</target>
 
 </project>
