@@ -1,4 +1,4 @@
 user_name=weblogic
-target_server=Colombes 
+target_server=colombes-bond0.ref.london.02.net 
 port_number=7012
 password=webl0gic321
