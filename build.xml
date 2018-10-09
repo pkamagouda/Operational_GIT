@@ -10,10 +10,9 @@
 	        <taskdef name="sshexec" classname="org.apache.tools.ant.taskdefs.optional.ssh.SSHExec" classpathref="jsch.path" />
 	
 	<target name="zip_creation">
-		<mkdir dir="zip_file"/>
 		<touch file="ManageOrder-master/ManageOrder-master/ManageOrder_Osb_2_0/release_number" />
 		<delete dir="ManageOrder-master/ManageOrder-master/ManageOrder_Osb_2_0/ManageOrder_2_0" />
-		<zip destfile="zip_file/osb.zip" basedir="ManageOrder-master/ManageOrder-master/ManageOrder_Osb_2_0" />
+		<zip destfile="ManageOrder_Osb_2_0.zip" basedir="ManageOrder-master/ManageOrder-master/ManageOrder_Osb_2_0" />
 	</target>
 
 	<target name="copy" depends="zip_creation">
