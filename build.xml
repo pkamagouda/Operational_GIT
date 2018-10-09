@@ -11,7 +11,9 @@
 	
 	<target name="zip_creation">
 		<mkdir dir="zip_file"/>
-		<zip destfile="zip_file/osb.zip" basedir="ManageOrder_Osb_2_0" />
+		<touch file="ManageOrder-master/ManageOrder-master/ManageOrder_Osb_2_0/release_number" />
+		<delete dir="ManageOrder-master/ManageOrder-master/ManageOrder_Osb_2_0/ManageOrder_2_0" />
+		<zip destfile="zip_file/osb.zip" basedir="ManageOrder-master/ManageOrder-master/ManageOrder_Osb_2_0" />
 	</target>
 
 	<target name="copy" depends="zip_creation">
