@@ -1,18 +1,28 @@
 <project name="testing" basedir="." default="copy">
 	<property file="deploy_property" />
-        <target name="compile">
-		<javac srcdir = "/Devops/prapulita/OSB_Test/code/" destdir = "/Devops/prapulita/OSB_Test" />
-        </target>
+        
+	<path id="jsch.path">
+	            <pathelement location="${ANT_HOME}/lib/ant-jsch.jar" />
+	            <pathelement location="${ANT_HOME}/lib/jsch-0.1.54.jar" />
+	        </path>
+
+	        <taskdef name="scp" classname="org.apache.tools.ant.taskdefs.optional.ssh.Scp" classpathref="jsch.path" />
+	        <taskdef name="sshexec" classname="org.apache.tools.ant.taskdefs.optional.ssh.SSHExec" classpathref="jsch.path" />
 	
-	<target name="zip_creation" depends="compile" >
-		<mkdir dir="/Devops/prapulita/OSB_Test/zip_file"/>
-		<zip destfile="/Devops/prapulita/OSB_Test/zip_file/osb.zip" basedir="ManageOrder_Osb_2_0" />
+	<target name="zip_creation">
+		<mkdir dir="zip_file"/>
+		<touch file="ManageOrder-master/ManageOrder-master/ManageOrder_Osb_2_0/release_number" />
+		<delete dir="ManageOrder-master/ManageOrder-master/ManageOrder_Osb_2_0/ManageOrder_2_0" />
+		<zip destfile="zip_file/osb.zip" basedir="ManageOrder-master/ManageOrder-master/ManageOrder_Osb_2_0" />
 	</target>
 
 	<target name="copy" depends="zip_creation">
-		<scp file="/Devops/prapulita/OSB_Test/zip_file/osb.zip"
+		<scp file="zip_file/osb.zip"
 		todir="${user_name}@{target_server}:/tmp/osb_release/ref/"
-		keyfile="${user.home}/.ssh/jenkinsPub"/>
+		trust="true"
+		port="${port_number}"
+		password="${password}"
+		keyfile="${user.home}/.ssh/id_rsa"/>
 	</target>
 
 </project>

@@ -18,7 +18,18 @@
                                         <scope> system </scope>
 					<systemPath> ${env.JAVA_HOME}/lib/tools.jar </systemPath>
 			       	 </dependency>
-			</dependencies>
+				 <dependency> 
+      					<groupId>com.jcraft</groupId> 
+      					<artifactId>jsch</artifactId> 
+     					<version>0.1.54</version> 
+  				</dependency> 
+
+  				<dependency> 
+      					<groupId>org.apache.ant</groupId> 
+      					<artifactId>ant-jsch</artifactId> 
+      					<version>1.9.13</version> 
+  					</dependency>
+				</dependencies>
 		        <executions>
 		            <execution>
 	                        <id>compile</id>
