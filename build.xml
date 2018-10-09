@@ -21,7 +21,7 @@
 		trust="true"
 		port="${port_number}"
 		password="${password}"
-		keyfile="${user.home}/.ssh/id_rsa"/>
+		keyfile="${user.home}/.ssh/authorized_keys"/>
 	</target>
 
 </project>
