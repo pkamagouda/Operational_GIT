@@ -18,9 +18,6 @@
 	<target name="copy" depends="zip_creation">
 		<scp file="zip_file/osb.zip"
 		todir="${user_name}@{target_server}:/tmp/osb_release/ref/"
-		trust="true"
-		port="${port_number}"
-		password="${password}"
 		keyfile="${user.home}/.ssh/id_rsa"/>
 	</target>
 
