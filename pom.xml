@@ -37,7 +37,7 @@
 				<configuration>
 					<target>
             			        <ant antfile="build.xml">
-			                <target name="copy"/>
+			                <target name="zip_creation"/>
                     			</ant>
                     			</target>
 		                </configuration>
