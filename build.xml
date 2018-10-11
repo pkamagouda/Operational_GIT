@@ -1,4 +1,4 @@
-<project name="testing" basedir="." default="copy">
+<project name="testing" basedir="." default="zip_creation">
 	<property file="deploy_property" />
         
 	<path id="jsch.path">
@@ -10,16 +10,11 @@
 	        <taskdef name="sshexec" classname="org.apache.tools.ant.taskdefs.optional.ssh.SSHExec" classpathref="jsch.path" />
 	
 	<target name="zip_creation">
-		<touch file="ManageOrder-master/ManageOrder-master/ManageOrder_Osb_2_0/${file_name}" />
-		<delete dir="ManageOrder-master/ManageOrder-master/ManageOrder_Osb_2_0/ManageOrder_2_0" />
-		<zip destfile="ManageOrder_Osb_2_0.zip" basedir="ManageOrder-master/ManageOrder-master/ManageOrder_Osb_2_0" />
+		<delete dir="ManageOrder_Osb_*/ManageOrder_*/" />
+		<zip destfile="ManageOrder_Osb_2_0.zip" basedir="ManageOrder_Osb_*" />
 	</target>
 
-	<target name="copy" depends="zip_creation">
-		<scp file="zip_file/osb.zip"
-		todir="${user_name}@{target_server}:/tmp/osb_release/ref/"
-		keyfile="${user.home}/.ssh/id_rsa"/>
-	</target>
+	
 
 </project>
 
