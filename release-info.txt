@@ -3,7 +3,7 @@ Auto-generated Service Manifest Information -- By Service Factory Build Tool
 ------------------------------------------------------------------------------
 
 Service Name:        ManageOrder_2_0
-Version:             2.0.30
+Version:             2.0.29
 Release:             ManageOrder_Osb_release_2_0_29.zip
 Tag:                 ManageOrder_Osb_2_0_29
 Build Date:          Thu Apr 26 11:03:46 UTC 2018
