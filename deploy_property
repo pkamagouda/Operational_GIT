@@ -1,0 +1,4 @@
+wls.username=weblogic
+target_server=colombes
+wls.port=7012
+wls.password=webl0gic321
