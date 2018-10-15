@@ -10,9 +10,9 @@
 	        <taskdef name="sshexec" classname="org.apache.tools.ant.taskdefs.optional.ssh.SSHExec" classpathref="jsch.path" />
 	
 	<target name="zip_creation">
-		<delete dir="ManageOrder_Osb_${file_name}/ManageOrder_${file_name}/" />
-		<copy file="Code/release-info.txt" todir="ManageOrder_Osb_${file_name}" />
-		<zip destfile="ManageOrder_Osb_${zip_name}.zip" basedir="ManageOrder_Osb_${file_name}" />
+		<delete dir="/home/cts1/.jenkins/workspace/Manage_Order_Code/ManageOrder_Osb_${file_name}/ManageOrder_${file_name}/" />
+		<copy file="release-info.txt" todir="/home/cts1/.jenkins/workspace/Manage_Order_Code/ManageOrder_Osb_${file_name}" />
+		<zip destfile="ManageOrder_Osb_${zip_name}.zip" basedir="/home/cts1/.jenkins/workspace/Manage_Order_Code/ManageOrder_Osb_${file_name}" />
 	</target>
 
 	
