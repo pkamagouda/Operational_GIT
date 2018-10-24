@@ -39,7 +39,7 @@ respective environment.
 Release Contents and its MD5 Checksum at the time of deployment (md5sum command)
 ------------------------------------------------------------------------------
 
---- Release package contents ---
+-- Release package contents --
 
 6d8fbeceffeef3df840ef6ed68779ed5 *config/dev/backend-env-config.xml
 7816f54a1d687b18f3463a1a825ebd1a *config/dev/service-config.xml
