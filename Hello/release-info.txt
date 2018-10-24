@@ -1,20 +1,17 @@
 ------------------------------------------------------------------------------
-Auto-generated Service Manifest Information -- By Service Factory Build Tool
+Auto-generated Service Manifest Information -- By SOA OSB Jenkins Deployment
 ------------------------------------------------------------------------------
 
 Service Name:        Hello_1_0
 Version:             1.0.30
 Release:             Hello_Osb_release_1_0_30.zip
-Tag:                 Hello_Osb_1_0_30
 Build Date:          Thu Apr 26 11:03:46 UTC 2018
-Built on:            ip-10-40-242-47.eu-west-1.compute.internal
-Built by:            root
-Release location:    http://cursa.dev.o2.co.uk/release_candidates/soa-factory/esb/Hello_Osb_release_1_0_30.zip
-Release Note:        Products LAN: http://devo2.dev.o2.co.uk:18080/confluence/display/SF/Hello_Osb_release_1_0_30
-                     UK LAN:       http://devo2:18080/confluence/display/SF/Hello_release_1_0_30
+Built on:            http://192.168.2.178:8080
+Built by:            Jenkins
+Release location:    https://github.com/pkamagouda/Test_O2/tree/Hello_Code/Hello_Osb_release_1_0_30.zip
+Release Note:        https://github.com/pkamagouda/Test_O2/tree/Hello_Code/Hello_Osb_release_1_0_30.zip
 
 ------------------------------------------------------------------------------
-
 
 
 ------------------------------------------------------------------------------
@@ -30,7 +27,7 @@ As wlapp user:
 
 Once deployed, this release-info.txt file will be stored in the following location:
 
-	/usr/o2/esb/ext_resources/soa-platform/services-config/Hello_1_0/
+	https://github.com/pkamagouda/Test_O2/blob/master/Hello/release-info.txt
 
 This can be used to identify the deployed version of Hello_1_0 service in the
 respective environment.
