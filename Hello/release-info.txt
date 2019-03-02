@@ -8,8 +8,8 @@ Release:             Hello_Osb_release_1.0.79.zip
 Build Date:          Sat Mar 2 17:38:03 IST 2019
 Built on:            http://localhost:8080
 Built by:            Jenkins
-Release location:    https://github.com/pkamagouda/Test_O2/tree/Hello_Code/Hello_Osb_release_1.0.79.zip
-Release Note:        https://github.com/pkamagouda/Test_O2/tree/Hello_Code/Hello_Osb_release_1.0.79.zip
+Release location:    https://github.com/pkamagouda/Operational_GIT/tree/Hello_Code/Hello_Osb_release_1.0.79.zip
+Release Note:        https://github.com/pkamagouda/Operational_GIT/tree/Hello_Code/Hello_Osb_release_1.0.79.zip
 
 ------------------------------------------------------------------------------
 
@@ -27,7 +27,7 @@ As wlapp user:
 
 Once deployed, this release-info.txt file will be stored in the following location:
 
-	https://github.com/pkamagouda/Test_O2/blob/master/Hello/release-info.txt
+	https://github.com/pkamagouda/Operational_GIT/blob/master/Hello/release-info.txt
 
 This can be used to identify the deployed version of Hello_1_0 service in the
 respective environment.
