@@ -5,7 +5,7 @@ Auto-generated Service Manifest Information -- By SOA OSB Jenkins Deployment
 Service Name:        Hello_1_0
 Version:             1.0.71
 Release:             Hello_Osb_release_1.0.71.zip
-Build Date:          Sat Mar  2 15:56:52 IST 2019
+Build Date:          Sat Mar 2 15:56:52 IST 2019
 Built on:            http://localhost:8080
 Built by:            Jenkins
 Release location:    https://github.com/pkamagouda/Test_O2/tree/Hello_Code/Hello_Osb_release_1.0.71.zip
